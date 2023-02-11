@@ -87,11 +87,11 @@ inputField.addEventListener("keyup", function (event) {
 সেই ইমেজটা চেইঞ্জ হয়ে যাবে। একটু গুগলে সার্চ দিয়ে দেখো। জিনিসটা কিভাবে করা যেতে পারে। 
 -----------------------------------------------------------------------------------*/
 /* Event Handeller */
-function newImg(e) {
-  e.src = "images/shoes/shoe-3.png";
+function newImg(event, val) {
+  event.src = `images/shoes/shoe-${val}.png`;
 }
-function oldImg(e) {
-  e.src = "images/shoes/shoe-1.png";
+function oldImg(event, val) {
+  event.src = `images/shoes/shoe-${val}.png`;
 }
 /* Event Listener */
 // const img1 = document.getElementById('img1');
